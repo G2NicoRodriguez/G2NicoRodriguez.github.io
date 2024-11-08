@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios - San Juan Verde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado Fijo (Navbar) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SAN JUAN VERDE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficios.html">Beneficios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Principal (Hero) -->
+  <section id="inicio" class="hero-section">
+    <!-- Imagen de fondo con src -->
+    <img src="/imagenes/servicios.jpg" alt="Servicios" class="hero-background">
+    <!-- Degradado verde -->
+    <div class="hero-gradient"></div>
+    <!-- Contenido -->
+    <div class="overlay">
+      <div class="text-box">
+        <h1>NUESTROS SERVICIOS</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="py-5">
+    <div class="container">
+
+      <!-- Primer Servicio: Jardines Flotantes -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-2 order-md-1">
+          <h2 class="text-success">Jardines Flotantes</h2>
+          <p>
+            El paisajismo es la actividad destinada a modificar las características visibles, físicas y anímicas de un espacio natural. Algunos de los elementos que pueden alterarse son la flora, las formas del terreno, las elevaciones o cauces de agua, elementos materiales creados por el hombre y elementos abstractos como la luminosidad.
+            El paisajismo es ciencia y arte a la vez, por lo que requiere de excelentes dotes de observación y habilidades de diseño, así como planificación, creatividad, organización e imaginación.          </p>
+          <a href="#" class="btn btn-success">Ver Más</a>
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+          <img src="jardines-flotantes.jpg" alt="Jardines Flotantes" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- Segundo Servicio: Jardines Personalizados -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-1 order-md-2">
+          <h2 class="text-success">Jardines Personalizados</h2>
+          <p>
+            Diseñamos jardines a medida que reflejan tus gustos y necesidades. Combinamos creatividad y funcionalidad para crear espacios verdes que encajen perfectamente con tu estilo de vida.
+          </p>
+          <a href="#" class="btn btn-success">Ver Más</a>
+        </div>
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="jardines-personalizados.jpg" alt="Jardines Personalizados" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- Tercer Servicio: Paquizados -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-2 order-md-1">
+          <h2 class="text-success">Paquizados</h2>
+          <p>
+            Ofrecemos servicios integrales de paquización para revitalizar tus espacios exteriores. Desde planificación hasta ejecución, aseguramos resultados de alta calidad y duraderos.
+          </p>
+          <a href="#" class="btn btn-success">Ver Más</a>
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+          <img src="paquizados.jpg" alt="Paquizados" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span class="text-white">&copy; 2023 San Juan Verde. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- JavaScript de Bootstrap -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
