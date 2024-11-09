@@ -26,6 +26,24 @@ img {
   width: 100%;
 }
 
+/* Estilo de Hover para Botones */
+.btn:hover {
+  background-color: #FFC107;
+  color: #ffffff;
+}
+
+/* Botones Ver Más en las Tarjetas */
+.btn-secondary {
+  background-color: #28a745; /* Verde */
+  color: #ffffff;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #FFC107; /* Amarillo en hover */
+  color: #ffffff;
+}
+
 /* Navbar */
 .navbar {
   background: linear-gradient(45deg, #006400, #008000);
@@ -36,7 +54,7 @@ img {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #dcdcdc !important;
+  color: #FFC107 !important;
 }
 
 /* Sección Principal (Hero) */
@@ -97,6 +115,8 @@ section {
 /* Footer */
 .footer {
   background: linear-gradient(45deg, #006400, #008000);
+  position: relative;
+  z-index: 10;
 }
 
 .footer .text-white {
@@ -110,6 +130,7 @@ section {
   width: 100px;
   height: auto;
   z-index: 1;
+  max-height: 100%;
 }
 
 .decoracion-izquierda {
@@ -123,6 +144,7 @@ section {
 /* Contenido */
 #contenido {
   position: relative;
+  padding-bottom: 100px;
 }
 
 #contenido .container {
@@ -159,6 +181,14 @@ section {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos .card img {
+  width: 100%;
+  height: 200px; /* Define una altura fija para mantener la imagen dentro de la tarjeta */
+  object-fit: cover; /* Asegura que la imagen se recorte si es necesario para ajustarse al contenedor */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 #proyectos .card-title {
@@ -203,6 +233,24 @@ section {
   height: 100%;
 }
 
+/* Color de las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #28a745;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #218838;
+}
+
 /* Responsividad */
 @media (max-width: 991px) {
   .servicio-card {
@@ -232,7 +280,7 @@ section {
     display: none;
   }
 
-  /* Ajuste del Formulario en Móviles */
+  /* Ajuste del Formulario en Moviles */
   .form-container {
     padding: 15px;
   }
