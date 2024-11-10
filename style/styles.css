@@ -17,6 +17,13 @@ p, #servicios p, #proyectos .card-text {
   color: #333333;
   margin-bottom: 20px;
 }
+i {
+  height: 100px;
+  width: 100px;
+}
+
+
+
 
 img {
   max-width: 100%;
@@ -179,7 +186,7 @@ section {
 
 /* Sección de Proyectos */
 #proyectos .card {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #FFC107;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -207,6 +214,11 @@ section {
 
 #proyectos .card-body, #proyectos .card-footer {
   padding: 20px;
+}
+
+.modal-content{
+    background-color:#FFC107;
+
 }
 
 /* Formulario de Contacto y Mapa */
