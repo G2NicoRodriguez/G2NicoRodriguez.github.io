@@ -18,14 +18,14 @@
   >
 
   <!-- Estilos Personalizados -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
 
   <!-- Encabezado Fijo (Navbar) -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">SAN JUAN VERDE</a>
+      <a class="navbar-brand" href="../index.html">SAN JUAN VERDE</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -40,7 +40,7 @@
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="beneficios.html">Beneficios</a>
@@ -79,7 +79,7 @@
 
       <!-- Primer Servicio: Jardines Flotantes -->
       <div class="row align-items-center mb-5">
-        <div class="col-md-6 order-2 order-md-1">
+        <div class="col-md-6 order-1 order-md-1">
           <h2 class="text-success">Jardines Flotantes</h2>
           <p>
             Los jardines flotantes, también conocidos como jardines verticales, son una innovadora solución de paisajismo que permite aprovechar al máximo el espacio, especialmente en entornos urbanos o lugares con superficies limitadas. Este tipo de jardines añade vida y color a muros y fachadas, transformándolos en auténticos ecosistemas que contribuyen al bienestar ambiental y estético.
@@ -88,9 +88,9 @@
             
             Nuestra experiencia en el diseño y mantenimiento de jardines flotantes nos permite ofrecer soluciones sostenibles y estéticamente impactantes, ideales para residencias, oficinas, comercios y espacios públicos.
            </p>
-          <a href="#" class="btn btn-success">Ver Más</a>
+           <button class="btn btn-success" data-toggle="modal" data-target="#modal1">Ver Más</button>
         </div>
-        <div class="col-md-6 order-1 order-md-2">
+        <div class="col-md-6 order-2 order-md-2">
           <img src="/imagenes/jardin_flotante.jpeg" alt="Jardines Flotantes" class="img-fluid">
         </div>
       </div>
@@ -104,7 +104,7 @@
 
 En San Juan Verde, entendemos que cada proyecto es único, por lo que adaptamos cada diseño para resaltar la identidad del espacio y sus características específicas. Desde jardines minimalistas hasta proyectos exuberantes, trabajamos con dedicación para que cada jardín se convierta en un lugar especial que invite al disfrute y a la conexión con la naturaleza.
           </p>
-          <a href="#" class="btn btn-success">Ver Más</a>
+          <button class="btn btn-success" data-toggle="modal" data-target="#modal2">Ver Más</button>
         </div>
         <div class="col-md-6 order-2 order-md-1">
           <img src="/imagenes/jardin_personalizado.jpeg" alt="Jardines Personalizados" class="img-fluid">
@@ -113,22 +113,78 @@ En San Juan Verde, entendemos que cada proyecto es único, por lo que adaptamos 
 
       <!-- Tercer Servicio: Paquizados -->
       <div class="row align-items-center mb-5">
-        <div class="col-md-6 order-2 order-md-1">
+        <div class="col-md-6 order-1 order-md-1">
           <h2 class="text-success">Paquizados</h2>
           <p>
             Ofrecemos servicios integrales de parquización para transformar y revitalizar espacios exteriores, mejorando su funcionalidad y estética. Desde la planificación inicial hasta la ejecución final, nuestro equipo se encarga de cada detalle para asegurar resultados de alta calidad y duraderos.
 
             En San Juan Verde, nos especializamos en la creación de áreas verdes sostenibles y atractivas, ideales para espacios públicos, comerciales y residenciales. Nuestros proyectos de parquización combinan diseño innovador y selección de especies adecuadas al entorno, contribuyendo a la armonía y el disfrute de los espacios al aire libre.
           </p>
-          <a href="#" class="btn btn-success">Ver Más</a>
+          <button class="btn btn-success" data-toggle="modal" data-target="#modal3">Ver Más</button>
         </div>
-        <div class="col-md-6 order-1 order-md-2">
+        <div class="col-md-6 order-2 order-md-2">
           <img src="/imagenes/parquizados.jpeg" alt="Paquizados" class="img-fluid">
         </div>
       </div>
 
     </div>
   </section>
+
+<!-- Modales -->
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Jardín Flotante</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="/imagenes/jardin_flotante.jpeg" alt="Parquizado" class="img-fluid mb-3">
+          <p>En esta imagen se puede observar como realizamos un proyecto de jardín flotante para la casa de un cliente, mejorando su vista delantera.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Jardín personalizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="/imagenes/jardin_personalizado.jpeg" alt="Jardín Legislatura" class="img-fluid mb-3">
+          <p>Si no te gusta ningun jardín de los que hemos mostrado, ¡No te preocupes! ¡Puedes personalizar el tuyo a tu medida y gustos!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Parquizados</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="/imagenes/parquizados.jpeg" alt="Espacio Corporativo" class="img-fluid mb-3">
+          <p>No solo tenemos proyectos para vivendas o casas residenciales, también tenemos proyectos grandes. Si tienes un gran terreno que quieres parquizar ¡Podes contactarte con nosotros para que te ayudemos!.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer mt-auto py-3">
