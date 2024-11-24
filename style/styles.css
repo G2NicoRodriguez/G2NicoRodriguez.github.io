@@ -85,6 +85,24 @@ img {
   color: #FFC107 !important;
 }
 
+/* Estilos para el logo en el navbar */
+.navbar-logo {
+  height: 24px; 
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Ajustes responsive para el navbar y logo */
+@media (max-width: 767px) {
+  .navbar-logo {
+    height: 20px; 
+  }
+  
+  .navbar-brand {
+    font-size: 0.9rem; 
+  }
+}
+
 /* Sección Principal (Hero) */
 .hero-section {
   position: relative;
